@@ -1,8 +1,13 @@
-function iniciar() {
-    var nombre = "Mozilla";  // La variable nombre es una variable local creada por iniciar.
-    function mostrarNombre() {  // La función mostrarNombre es una función interna, una clausura.
-        alert(nombre);  // Usa una variable declarada en la función externa.
-    }
-    mostrarNombre();
+function myFunc(theObject) {
+    theObject.make = 'Toyota';
 }
-iniciar();
+
+[parcial]
+var mycar = { make: 'Honda', model: 'Accord', year: 1998 };
+var x, y;
+
+x = mycar.make; // x obtiene el valor "Honda"
+
+myFunc(mycar);
+y = mycar.make; // y obtiene el valor "Toyota"
+                  // (la propiedad make fue cambiada por la función)
