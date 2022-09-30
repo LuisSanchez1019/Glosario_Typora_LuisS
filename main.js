@@ -1,13 +1,19 @@
-function myFunc(theObject) {
-    theObject.make = 'Toyota';
+// Función tradicional
+function (a, b) {
+    return a + b + 100;
 }
 
-[parcial]
-var mycar = { make: 'Honda', model: 'Accord', year: 1998 };
-var x, y;
+// Función flecha
+(a, b) => a + b + 100;
 
-x = mycar.make; // x obtiene el valor "Honda"
+// Función tradicional (sin argumentos)
+let a = 4;
+let b = 2;
+function () {
+    return a + b + 100;
+}
 
-myFunc(mycar);
-y = mycar.make; // y obtiene el valor "Toyota"
-                  // (la propiedad make fue cambiada por la función)
+// Función flecha (sin argumentos)
+let a = 4;
+let b = 2;
+() => a + b + 100;

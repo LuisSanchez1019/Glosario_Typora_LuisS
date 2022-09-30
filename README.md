@@ -109,3 +109,51 @@ myFunc(mycar);
 y = mycar.make; // y obtiene el valor "Toyota"
                 // (la propiedad make fue cambiada por la función)
 ```
+
+# Que son los Separadores de emascrip
+
+¿Cómo agregar separador de miles en JavaScript?
+
+Puedes usar la biblioteca de **javascript** autoNumeric que hace justo lo que requieres con múltiples opciones de configuración. Por defecto usa como **separador de miles** la , , como **separador** decimal el punto . y usa 2 decimales. En tu caso solo necesitarías establecer la opción de 3 decimales con decimalPlaces
+
+
+
+```js
+let myNumericInput = new AutoNumeric('.myInput',{decimalPlaces: 3});
+
+document.querySelector('.myInput').addEventListener('keyup',() =>{
+  console.log(myNumericInput.getNumber())
+})
+<script src="https://cdn.jsdelivr.net/npm/autonumeric@4.5.4"></script>
+ <input type="text" class="myInput">
+```
+
+# Funciones flecha
+
+¿Cómo llamar una función flecha JavaScript?
+
+Se llama “**funciones** de **flecha**”, porque se ve así: let func = (arg1, arg2, ..., argN) => expression; Esto crea una **función** func que acepta los parámetros arg1.. argN , luego evalúa la expression del lado derecho mediante su uso y devuelve su resultado
+
+
+
+```javascript
+// Función tradicional
+function (a, b){
+  return a + b + 100;
+}
+
+// Función flecha
+(a, b) => a + b + 100;
+
+// Función tradicional (sin argumentos)
+let a = 4;
+let b = 2;
+function (){
+  return a + b + 100;
+}
+
+// Función flecha (sin argumentos)
+let a = 4;
+let b = 2;
+() => a + b + 100;
+```
