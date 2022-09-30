@@ -157,3 +157,27 @@ let a = 4;
 let b = 2;
 () => a + b + 100;
 ```
+
+# Funcion expresiva
+
+ La función expresiva **es una variable que contiene adentro una función**. Luego, siendo variable, la función podría alterarse, sustituirse, cambiar dentro de la memoria.
+
+
+
+```javascript
+function respuesta(){
+}
+
+console.log(respuesta());    // => undefined
+
+function respuesta2(){
+     return 'Hola';
+}
+
+console.log(respuesta2());   // => Hola
+```
+
+
+
+
+
