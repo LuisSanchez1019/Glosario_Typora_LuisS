@@ -1,9 +1,4 @@
-function testinput(re, str) {
-    var midstring;
-    if (str.search(re) != -1) {
-        midstring = ' contains ';
-    } else {
-        midstring = ' does not contain ';
-    }
-    console.log(str + midstring + re);
+for (let step = 0; step < 5; step++) {
+    // Se ejecuta 5 veces, con valores del paso 0 al 4.
+    console.log('Camina un paso hacia el este');
 }

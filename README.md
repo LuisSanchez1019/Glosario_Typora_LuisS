@@ -58,3 +58,16 @@ function testinput(re, str) {
   console.log(str + midstring + re);
 }
 ```
+
+# Iteracion
+
+En JavaScript los bucles (loops) **son utilizados para realizar tareas repetitivas con base en una condición**. Las condiciones típicamente devuelven true (verdadero) o false (falso) al ser evaluados. El bucle continuará ejecutándose hasta que la condición devuelva false
+
+
+
+```javascript
+for (let step = 0; step < 5; step++) {
+  // Se ejecuta 5 veces, con valores del paso 0 al 4.
+  console.log('Camina un paso hacia el este');
+}
+```
