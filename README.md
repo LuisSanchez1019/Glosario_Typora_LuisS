@@ -31,7 +31,7 @@ var raices = numeros.map(Math.sqrt);
 
 `filter llama a la función `callback` sobre cada elemento del array, y construye un nuevo array con todos los valores para los cuales `callback` devuelve un valor verdadero. `callback` es invocada sólo para índices del array que tengan un valor asignado. No se invoca sobre índices que hayan sido borrados o a los que no se les haya asignado algún valor. Los elementos del array que no cumplan la condición `callback` simplemente los salta, y no son incluidos en el nuevo array.
 
-``
+
 
 ```javascript
 function esSuficientementeGrande(elemento) {
@@ -41,3 +41,20 @@ var filtrados = [12, 5, 8, 130, 44].filter(esSuficientementeGrande);
 // filtrados es [12, 130, 44]
 ```
 
+# Sherh
+
+Cuando se desee saber en qué casos un patrón se encuentra en una cadena de texto utiliza `search()` (si sólo deseas saber si existe, utiliza el método [`test()`](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/RegExp/test) del prototipo de `RegExp`); para más información (pero de ejecución más lenta) utiliza [`match()`](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/String/match) (similar al método [`exec()`](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/RegExp/exec) de las expresiones regulares).
+
+
+
+```javascript
+function testinput(re, str) {
+  var midstring;
+  if (str.search(re) != -1) {
+    midstring = ' contains ';
+  } else {
+    midstring = ' does not contain ';
+  }
+  console.log(str + midstring + re);
+}
+```
