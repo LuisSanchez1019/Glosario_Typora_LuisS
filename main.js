@@ -1,4 +1,5 @@
-var numeros= [1, 4, 9];
-var raices = numeros.map(Math.sqrt);
-// raices tiene [1, 2, 3]
-// numeros aún mantiene [1, 4, 9]9
+function esSuficientementeGrande(elemento) {
+    return elemento >= 10;
+}
+var filtrados = [12, 5, 8, 130, 44].filter(esSuficientementeGrande);
+  // filtrados es [12, 130, 44]
