@@ -1,4 +1,8 @@
-for (let step = 0; step < 5; step++) {
-    // Se ejecuta 5 veces, con valores del paso 0 al 4.
-    console.log('Camina un paso hacia el este');
+function iniciar() {
+    var nombre = "Mozilla";  // La variable nombre es una variable local creada por iniciar.
+    function mostrarNombre() {  // La función mostrarNombre es una función interna, una clausura.
+        alert(nombre);  // Usa una variable declarada en la función externa.
+    }
+    mostrarNombre();
 }
+iniciar();

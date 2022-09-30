@@ -71,3 +71,21 @@ for (let step = 0; step < 5; step++) {
   console.log('Camina un paso hacia el este');
 }
 ```
+
+# Closures
+
+Una clausura o *closure* es una función que guarda referencias del estado adyacente (**ámbito léxico**). En otras palabras, una clausura permite acceder al ámbito de una función exterior desde una función interior. En JavaScript, las clausuras se crean cada vez que una función es creada.
+
+
+
+```javascript
+function iniciar() {
+  var nombre = "Mozilla";  // La variable nombre es una variable local creada por iniciar.
+  function mostrarNombre() {  // La función mostrarNombre es una función interna, una clausura.
+    alert(nombre);  // Usa una variable declarada en la función externa.
+  }
+  mostrarNombre();
+}
+iniciar();
+```
+
