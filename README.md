@@ -179,5 +179,15 @@ console.log(respuesta2());   // => Hola
 
 
 
+# Funciones delcaradas
+
+En las funciones declarativas, utilizamos la palabra reservada function al inicio para poder declarar la función En la expresión de función, la declaración se inicia con la palabra reservada var, donde se generará una variable que guardará una función anónima A las funciones declarativas se les aplica hoisting, y a la expresión de función, no. Ya que el hoisting solo se aplica en las palabras reservadas var y function.
+
+Lo que quiere decir que con las funciones declarativas, podemos mandar llamar la función antes de que ésta sea declarada, y con la expresión de función, no, tendríamos que declararla primero, y después mandarla llamar
+
+
+
+
+
 
 
